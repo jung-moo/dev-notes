@@ -17,7 +17,7 @@ JVM Runtime Data Areas
 
 백엔드 개발에서는 우선 **Heap과 Stack의 차이**를 이해하는 것이 중요하다.
 
-일반적인 프로세스의 메모리 구조는 [[process-memory|프로세스 메모리]]에서 다룬다.
+일반적인 프로세스의 메모리 구조는 [[process-memory]]에서 다룬다.
 
 ## Heap
 
@@ -214,6 +214,8 @@ JVM Heap의 **최대 크기**를 설정한다.
 
 각 스레드의 Stack 크기를 256KB로 설정한다.
 
+이러한 옵션이 실제 서버 실행 명령에 나타나는 예시는 [[jboss-process#JVM 메모리 옵션]]을 참고한다.
+
 ## 정리
 
 ```
@@ -237,4 +239,4 @@ Stack
 → 스레드 Stack 크기
 ```
 
-일반적인 프로세스 수준의 Heap과 Stack은 [[process-memory|프로세스 메모리]]를 참고한다.
+일반적인 프로세스 수준의 Heap과 Stack은 [[process-memory]]를 참고한다.

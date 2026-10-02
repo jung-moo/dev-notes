@@ -4,7 +4,7 @@
 
 Jenkins를 통한 배포 과정에서 **SSH Timeout이 발생하며 배포가 정상적으로 완료되지 않는 문제**가 발생했다.
 
-Jenkins 로그와 서버의 프로세스 상태를 확인한 결과, 기존 [[jboss-process|JBoss 프로세스]]가 정상적으로 종료되지 않고 남아 있는 것을 확인했다.
+Jenkins 로그와 서버의 프로세스 상태를 확인한 결과, 기존 [[jboss-process]]가 정상적으로 종료되지 않고 남아 있는 것을 확인했다.
 
 잔존 프로세스를 직접 종료한 뒤 Jenkins 배포를 다시 실행하여 정상적으로 배포되는 것을 확인했다.
 
@@ -124,7 +124,7 @@ ps -ef | grep <프로세스_키워드>
 - 대상 프로세스의 PID가 무엇인지
     
 
-프로세스와 PID에 대한 자세한 내용은 [[process|프로세스]]와 [[linux/process-command|Linux 프로세스 명령어]]에서 다룬다.
+프로세스와 PID에 대한 자세한 내용은 [[process]]와 [[process-command]]에서 다룬다.
 
 ### 장애 복구와 근본 원인 해결은 구분해야 한다
 
@@ -148,25 +148,14 @@ JBoss가 왜 정상 종료되지 않았는가?
 
 동일한 문제가 다시 발생한다면 다음 단계로 JBoss가 정상적으로 종료되지 않은 원인을 추가로 확인한다.
 
-- JBoss 종료 시점의 서버 로그
-    
-- 종료 스크립트의 실행 결과
-    
-- 종료 과정에서 장시간 수행되는 작업
-    
-- 프로세스가 종료되지 못하도록 하는 Thread 존재 여부
-    
-- Jenkins가 실행하는 재기동 스크립트의 동작
-    
-- Jenkins SSH Timeout 설정과 실제 재기동 소요 시간
-    
+조사 항목과 진행 상황은 [[pending-checks#Jenkins JBoss Deploy Timeout]]에서 관리한다.
 
 이를 통해 단순히 잔존 프로세스를 종료하는 것에서 끝나지 않고 **JBoss가 정상 종료되지 않는 근본 원인과 재발 방지 방법까지 확인하는 것**을 목표로 한다.
 
 ## 관련 문서
 
-- [[process|프로세스]]
+- [[process]]
     
-- [[linux/process-command|Linux 프로세스 명령어]]
+- [[process-command]]
     
-- [[jboss-process|JBoss 프로세스]]
+- [[jboss-process]]

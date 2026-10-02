@@ -4,7 +4,7 @@
 
 Linux에서는 `ps`, `grep`, `tail`, `kill` 등의 명령어를 이용하여 프로세스를 확인하거나 로그를 조회하고 프로세스를 종료할 수 있다.
 
-프로세스, PID, PPID 등의 개념은 [[process|프로세스]]에서 다룬다.
+프로세스, PID, PPID 등의 개념은 [[process]]에서 다룬다.
 
 ## ps
 
@@ -211,4 +211,8 @@ kill -9 <PID>
    kill <PID>
 ```
 
-PID와 PPID의 의미 및 부모-자식 프로세스 관계는 [[process|프로세스]]를 참고한다.
+PID와 PPID의 의미 및 부모-자식 프로세스 관계는 [[process]]를 참고한다.
+
+프로세스 조회와 종료를 실제 장애 복구에 사용한 과정은 [[jenkins-jboss-deploy-timeout]]를 참고한다.
+
+프로세스를 확인한 뒤 사용 중인 포트와 LISTEN 상태를 조사하려면 [[socket#ss 명령어]]를 참고한다.

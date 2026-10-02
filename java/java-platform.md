@@ -74,7 +74,7 @@ JVM이 운영체제와 CPU의 차이를 처리하기 때문에 Java 프로그램
 
 Java 프로그램이 플랫폼 독립적인 것이지 JVM 자체가 플랫폼 독립적인 것은 아니다.
 
-JVM의 메모리 구조는 [[jvm-memory|JVM 메모리]]에서 다룬다.
+JVM의 메모리 구조는 [[jvm-memory]]에서 다룬다.
 
 ## Bytecode
 

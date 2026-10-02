@@ -143,6 +143,8 @@ ss -lntp
 
 운영 환경에서는 다음 관계를 이해하는 것이 중요하다.
 
+실행 중인 프로그램과 PID의 의미는 [[process]]에서 다룬다.
+
 ```text
 Process
    ↓
@@ -236,3 +238,5 @@ ss -lntp | grep -E ':<포트>'
 ```
 
 백엔드 개발자의 운영/트러블슈팅 관점에서는 **Process → Socket → Port → LISTEN → Connection**의 관계를 이해하는 것이 핵심이다.
+
+실제 Apache의 LISTEN 포트와 사용 프로세스를 확인한 과정은 [[jboss-request-size#실제 환경에서 Apache Port 확인]]를 참고한다.

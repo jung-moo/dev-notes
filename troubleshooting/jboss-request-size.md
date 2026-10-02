@@ -40,6 +40,8 @@ Apache보다 앞단에 **Nginx, LB 등이 존재하는지는 아직 확인하지
 
 WEB 서버에서 Apache 등의 웹서버 프로세스를 확인할 수 있다.
 
+프로세스를 조회하고 검색하는 `ps`와 `grep`의 사용법은 [[process-command]]를 참고한다.
+
 ```bash
 ps -ef | grep -E "httpd|apache|nginx"
 ```
@@ -79,7 +81,7 @@ ss -lntp
 - `-t` : TCP 소켓 확인
 - `-p` : 해당 소켓을 사용하는 프로세스 확인
 
-소켓에 대한 자세한 내용은 [[socket|Socket]] 참고
+소켓에 대한 자세한 내용은 [[socket]] 참고
 
 ### 실제 환경에서 Apache Port 확인
 
@@ -600,7 +602,7 @@ max-post-size 초과
 
 ## 추가 확인 사항
 
-확인 진행 상황은 [추가 확인 사항 목록](pending-checks.md#jboss-request-size)에서 관리한다.
+확인 진행 상황은 [[pending-checks#JBoss Request Size]]에서 관리한다.
 
 현재 Apache보다 앞단의 구조는 확인하지 않았다.
 

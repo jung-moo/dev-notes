@@ -2,7 +2,7 @@
 
 ## 핵심
 
-[[process|프로세스]]가 실행되면 운영체제로부터 메모리 공간을 할당받는다.
+[[process]]가 실행되면 운영체제로부터 메모리 공간을 할당받는다.
 
 일반적인 프로세스의 메모리 구조는 다음과 같이 구분해서 이해할 수 있다.
 
@@ -56,7 +56,7 @@ Heap에 할당된 메모리는 Stack과 달리 함수가 종료된다고 자동�
 
 언어와 실행 환경에 따라 직접 메모리를 해제하거나 Garbage Collector와 같은 메모리 관리 기능을 사용한다.
 
-Java의 객체와 Garbage Collection에 대한 내용은 [[jvm-memory|JVM 메모리]]에서 다룬다.
+Java의 객체와 Garbage Collection에 대한 내용은 [[jvm-memory]]에서 다룬다.
 
 ## Stack
 
@@ -106,7 +106,7 @@ Heap은 이러한 데이터를 함수 호출의 수명과 독립적으로 관리
 
 ## Java와의 관계
 
-Java 프로그램도 결국 운영체제에서 실행되는 [[process|프로세스]]이다.
+Java 프로그램도 결국 운영체제에서 실행되는 [[process]]이다.
 
 하지만 Java 프로그램은 JVM 위에서 실행되기 때문에 Java 개발자가 다루는 Heap과 Stack은 일반적인 프로세스 메모리 구조와 완전히 동일한 개념으로 보면 안 된다.
 
@@ -125,4 +125,4 @@ JVM Runtime Data Areas
     └── Native Method Stack
 ```
 
-Java의 객체, 지역변수, GC, `-Xms`, `-Xmx`, `-Xss` 등은 [[jvm-memory|JVM 메모리]]에서 다룬다.
+Java의 객체, 지역변수, GC, `-Xms`, `-Xmx`, `-Xss` 등은 [[jvm-memory]]에서 다룬다.

@@ -17,7 +17,7 @@ PID 1001
 
 실제 JBoss 애플리케이션 서버가 동작하는 핵심 프로세스는 **Java(JVM) 프로세스**이다.
 
-PID와 PPID 등 프로세스의 기본 개념은 [[process|프로세스]]를 참고한다.
+PID와 PPID 등 프로세스의 기본 개념은 [[process]]를 참고한다.
 
 ## JBoss 프로세스 확인
 
@@ -53,7 +53,7 @@ PID = 1001
 
 이를 통해 두 프로세스의 부모-자식 관계를 확인할 수 있다.
 
-Linux에서 프로세스를 조회하는 명령어는 [[process-command|Linux 프로세스 관련 명령어]]를 참고한다.
+Linux에서 프로세스를 조회하는 명령어는 [[process-command]]를 참고한다.
 
 ## standalone.sh
 
@@ -72,6 +72,8 @@ Linux에서 프로세스를 조회하는 명령어는 [[process-command|Linux �
 ## Java 프로세스
 
 실제 JBoss는 JVM 위에서 동작한다.
+
+JVM이 Java 프로그램을 실행하는 역할은 [[java-platform#JVM]]에서 다룬다.
 
 따라서 실제 프로세스의 CMD를 보면 다음과 같은 구조를 확인할 수 있다.
 
@@ -122,7 +124,7 @@ org.jboss.as.standalone
 - `-Xss` : 스레드 Stack 크기
     
 
-자세한 내용은 [[jvm-memory|JVM 메모리]]를 참고한다.
+자세한 내용은 [[jvm-memory]]를 참고한다.
 
 ### `-D` 옵션
 
@@ -242,7 +244,9 @@ JBoss 프로세스에 문제가 발생했을 때는 우선 다음과 같은 흐�
 
 특히 프로세스를 종료하거나 재기동해야 하는 상황에서는 **실행 스크립트의 PID와 실제 Java 프로세스의 PID를 구분해서 확인하는 것이 중요하다.**
 
-프로세스 종료 명령어는 [[process-command|Linux 프로세스 관련 명령어]]를 참고한다.
+기존 JBoss 프로세스가 남아 배포가 완료되지 않았던 실제 사례는 [[jenkins-jboss-deploy-timeout]]를 참고한다.
+
+프로세스 종료 명령어는 [[process-command]]를 참고한다.
 
 ## 정리
 
